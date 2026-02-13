@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex , nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ズワイガニで有名な福井県越前市の越前がにミュージアムについて紹介します。隣接している道の駅のグルメも紹介しています。">
+  <title>越前がにミュージアム | トップページ</title>
+  <link rel="icon" type="image/x-icon" href="images/logo/favicon.ico">
+  <link rel="stylesheet" href="css/normalize.css">
+
+  <!-- <link href="css/common.css" rel="stylesheet"> -->
+  <link href="css/index.css" rel="stylesheet">
+  <script src="js/common.js" defer></script>
+</head>
+
+<body>
+  <!----------------------------------
+  ローディング画面 
+  ------------------------------------>
+  <div id="loading">
+    <div class="loading-wrapper">
+      <!-- カニ上下画像は交互アニメーション -->
+      <div class="loading-images">
+        <img src="images/index/logo-ue.png" class="image-a" alt="Loading 1">
+        <img src="images/index/logo-sita.png" class="image-b" alt="Loading 2">
+      </div>
+      <!-- ロゴ名画像は固定 -->
+      <div class="loading-fixed-logo">
+        <img src="images/index/loading-logo.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!------------------------------
+  ヘッダー
+  --------------------------------->
+  <header class="header-top">
+
+    <!-- 上部ヘッダー（ロゴ左上＋ハンバーガー右上） -->
+    <div class="header">
+      <div class="header-inner">
+        <!-- ロゴのimgを挿入 -->
+        <!-- ロゴ（左上） -->
+        <a href="index.html" class="header-logo-wrap">
+          <img id="header-logo" src="images/common/logo1.png" alt="">
+        </a>
+
+        <!-- ハンバーガーメニュー（右上固定） -->
+        <button class="menu-btn">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!--------------------------------------------
+    メイン画像ファーストビュー スライドショー
+    ---------------------------------------------->
+    <div class="slideshow">
+      <div class="slide">
+        <img src="images/index/index-main1.jpg" alt="スライド1">
+        <div class="catchcopy">越前がにの物語が、ここからはじまる。</div>
+      </div>
+      <div class="slide">
+        <img src="images/index/index-main2.jpg" alt="スライド2">
+        <div class="catchcopy">透明な神秘が漂う、越前の海。</div>
+      </div>
+      <div class="slide">
+        <img src="images/index/index-main3.jpg" alt="スライド3">
+        <div class="catchcopy">いのちがめぐる、越前の海。</div>
+      </div>
+      <div class="slide">
+        <img src="images/index/index-main4.jpg" alt="スライド4">
+        <div class="catchcopy">光と海が溶けあう、越前の夕景。</div>
+      </div>
+
+
+      <!---------------------------------------
+      メイン画面の下部分のナビゲーション
+      ----------------------------------->
+      <div class="main-navi-contents-all-box">
+        <div class="main-navi-contents-all-box-inner">
+          <div class="main-navi-contents-left">
+            <div class="main-navi-contents-left-inner">
+              <div class="main-navi-contents-left-title">
+                <img src="images/index/icon-time.png" alt="時計アイコン" class="icon-time">
+                <p>営業時間</p>
+              </div>
+
+              <div class="main-navi-contents-left-time-text">
+                <p>9:00～17:00
+                  <span class="main-navi-contents-left-closingtime-text">最終入館16:30まで</span>
+                </p>
+              </div>
+              <div class="main-navi-contents-left-attention-text">
+                <p>※自家用車かレンタカーでのご来訪をおススメいたします。</p>
+              </div>
+            </div>
+          </div>
+          <div class="main-navi-contents-right">
+            <a class="main-navi-link-fee" href="guide.html#guide_nyuukanryou">料金</a>
+            <a class="main-navi-link-map" href="guide.html#guide_map">館内マップ</a>
+            <a class="main-navi-link-about" href="about.html#about-crab">越前がにとは</a>
+            <a class="main-navi-link-access" href="access.html#access_2">アクセス</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!----------------------------------
+    フルスクリーンナビ 
+    -------------------------------------->
+    <!-- active を付けると表示されます -->
+    <div class="menu-list" id="fullscreenNav">
+      <div class="menu-list-inner">
+        <!-- フルスクリーンナビ上部のロゴと営業時間 -->
+        <div class="nav-top">
+          <a href="index.html">
+            <img id="nav-logo" src="images/logo/museum logo.png" alt="">
+          </a>
+          <div class="nav-business-hour">
+            <p>営業時間　<br><span>9:00～17:00</span></p>
+            <p>最終入館16:30まで</p>
+          </div>
+        </div>
+
+        <!-- フルスクリーンナビ下部のナビゲーションリスト -->
+        <nav class="nav-menu">
+          <ul class="menu-main">
+            <li class="accordion">
+              <div class="menu-link-wrapper">
+                <a href="index.html" class="menu-link">
+                  <span class="menu-title">HOME</span></a><button type="button" class="nav-accordion">+</button>
+              </div>
+              <ul class="submenu">
+                <li>
+                  <a href="index.html#news-columns" class="submenu-link">&gt;新着情報</a>
+                </li>
+              </ul>
+            </li>
+            <li class="accordion">
+              <div class="menu-link-wrapper">
+                <a href="guide.html" class="menu-link">
+                  <span class="menu-title">館内案内</span>
+
+                </a><button type="button" class="nav-accordion">+</button>
+              </div>
+              <ul class="submenu">
+                <li><a href="guide.html#guide_nyuukanryou" class="submenu-link">&gt; 入館料・開館時間・ 定休日</a></li>
+                <li><a href="guide.html#guide_access" class="submenu-link">&gt; アクセス</a></li>
+                <li><a href="guide.html#guide_event" class="submenu-link">&gt; イベント案内</a></li>
+                <li><a href="guide.html#guide_chara" class="submenu-link">&gt; マスコット紹介</a></li>
+                <li><a href="guide.html#guide_map" class="submenu-link">&gt; 館内マップ（3F～1F）</a></li>
+                <li><a href="guide.html#guide_uoichi" class="submenu-link">&gt; お食事処うおいち</a></li>
+              </ul>
+            </li>
+
+            <li class="accordion">
+              <div class="menu-link-wrapper">
+                <a href="about.html" class="menu-link"><span class="menu-title">越前がにとは</span></a><button type="button"
+                  class="nav-accordion">+</button>
+              </div>
+              <ul class="submenu">
+                <li><a href="about.html#about-crab" class="submenu-link">&gt; 越前がにとは</a></li>
+                <li><a href="about.html#about-ecology" class="submenu-link">&gt; 越前がにの生態</a></li>
+                <li><a href="about.html#about-history" class="submenu-link">&gt; 越前がにの歴史</a></li>
+              </ul>
+            </li>
+
+            <li class="accordion">
+              <div class="menu-link-wrapper">
+                <a href="echizen-coast.html" class="menu-link"><span class="menu-title">越前海岸</span></a><button
+                  type="button" class="nav-accordion">+</button>
+              </div>
+              <ul class="submenu">
+                <li><a href="echizen-coast.html#echizen-coast-intro" class="submenu-link">&gt; 越前海岸の特徴</a></li>
+                <li><a href="echizen-coast.html#echizen-coast-fish-intro" class="submenu-link">&gt; 越前海岸の魚たち</a></li>
+              </ul>
+            </li>
+
+            <li class="accordion">
+              <div class="menu-link-wrapper">
+                <a href="shop.html" class="menu-link"><span class="menu-title">道の駅「越前」</span></a><button type="button"
+                  class="nav-accordion">+</button>
+              </div>
+              <ul class="submenu">
+                <li><a href="shop.html#mitinoeki-map" class="submenu-link">&gt; 道の駅マップ</a></li>
+                <li><a href="shop.html#nigiwaihiroba" class="submenu-link">&gt; にぎわい広場</a></li>
+                <li><a href="shop.html#antennashop" class="submenu-link">&gt; アンテナショップ</a></li>
+                <li><a href="shop.html#roten" class="submenu-link">&gt; 露天風呂「漁火」</a></li>
+                <li><a href="shop.html#uoichi" class="submenu-link">&gt; うおいち</a></li>
+                <li><a href="shop.html#info" class="submenu-link">&gt; 越前観光案内所</a></li>
+              </ul>
+            </li>
+
+            <li class="accordion">
+              <div class="menu-link-wrapper">
+                <a href="access.html" class="menu-link"><span class="menu-title">アクセス</span></a><button type="button"
+                  class="nav-accordion">+</button>
+              </div>
+              <ul class="submenu">
+                <li><a href="access.html#access_1" class="submenu-link">&gt; 定休日・営業時間
+                    ・料金</a></li>
+                <li><a href="access.html#access_2" class="submenu-link">&gt; アクセスマップ</a></li>
+                <li><a href="access.html#access_3" class="submenu-link">&gt; 交通案内</a></li>
+                <li><a href="access.html#access_4" class="submenu-link">&gt; 周辺施設案内</a></li>
+                <li><a href="access.html#access_5" class="submenu-link">&gt; よくある質問</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ヘッダーここまで -->
+
+
+  <!---------------------------------------
+  　　　　　　　　メイン
+  --------------------------------------- -->
+  <div id="main">
+    <div id="mainarea">
+      <section class="home-heading">
+        <div class="home-heading-group">
+          <h3 class="home-heading-text">ようこそ！驚きと愛の越前がにの世界！</h3>
+          <p>越前がにミュージアムビックラブは越前がにや近海の魚たちの神秘を遊びながら学ぶ体験施設として、
+            海遊歩道やビックラブシアター、漁船チャレンジ、絵画水族館など楽しいゾーンがいっぱいのミュージアムです。
+            越前がにや日本海の神秘を遊びながら学ぶ体験ゾーン施設として、新しい「かに文化」に出会えます。</p>
+        </div>
+      </section>
+
+      <!-----------------------------------------
+      新着情報 
+      ------------------------------------------->
+      <section id="news-columns">
+        <h2>新着情報</h2>
+        <div class="news-area">
+          <div class="news-left-area">
+            <div class="news-card">
+              <img src="images/index/index1-1.jpg" alt="">
+              <div class="news-text">
+                <data value="2025-10-18">2025.10.18</data>
+                <p class="news-text-type">イベント</p>
+                <p>越前かにまつり2025期間中、かに太郎をさがせ ～ひみつのキーワード編～を開催します。</p>
+                <div class="link-button-area">
+                  <a class="link-button" href="https://www.echizenkk.jp/events/kanitarowosagase-himitsunokiwadohen"
+                    target="_blank">くわしくはこちら</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="news-right-area">
+            <div class="news-card">
+              <img src="images/index/index1-2.jpg" alt="">
+              <div class="news-text">
+                <data value="2025-06-30">2025.06.30</data>
+                <p class="news-text-type">イベント</p>
+                <p>日頃見ることができない特別なクラゲを一挙展示！夏休みの思い出に、期間限定の特別展をお楽しみください。</p>
+                <div class="link-button-area">
+                  <a class="link-button" href="https://www.town-echizen.jp/event/detail.php?id=797"
+                    target="_blank">くわしくはこちら</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- -----------------------------------------
+　　　　リンクエリア（長方形＋大きな円）＋3つの小さな円
+　　　　---------------------------------------------->
+
+      <div class="color-blue">
+        <div class="event-columns">
+          <div class="event-columns-box">
+
+            <!-- 施設案内の紹介 -->
+            <!-- 1枚目（スライダーあり） -->
+            <div class="event-card card1 right-layout">
+              <div class="event-top">
+                <div class="event-rect">
+                  <h4 class="event-title">館内マップ</h4>
+                  <p class="event-text">館内には遊びながら学べる様々な体験エリアがございます。10mの大型スクリーンで越前がにの
+                    生態を紹介するビックラブシアターや越前がにや四季折々の魚が見られる海遊歩道をはじめ、
+                    かに漁チャレンジといった大迫力の漁を体感できるシュミレーターなどがございます。<br>
+                    驚きに満ちた体験を通して越前がにと日本海の神秘に触れてみてください。</p>
+                  <div class="link-button-area">
+                    <a class="link-button" href="guide.html#guide_map">くわしくはこちら</a>
+                  </div>
+                  <div class="character-animation">
+                    <img src="images/index/kanimaru.png" alt="キャラクターのかにまる">
+                  </div>
+                </div>
+                <div class="event-big-circle">
+                  <img src="images/index/index-event1.jpg" alt="">
+                </div>
+              </div>
+
+              <!-- ★ここに小さな円のサムネイルスライダーを入れる★ -->
+              <div class="event-subslider">
+                <div class="mask">
+                  <div class="circle-frame">
+                    <img class="circle-img set1" data-index="0">
+                  </div>
+                  <div class="circle-frame">
+                    <img class="circle-img set1" data-index="1">
+                  </div>
+                  <div class="circle-frame">
+                    <img class="circle-img set1" data-index="2">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2枚目（反転 / スライダーなし） -->
+            <!-- 道の駅「越前」紹介 -->
+            <div class="event-card card2 left-layout">
+              <div class="event-top">
+                <div class="event-rect">
+                  <h4 class="event-title">道の駅「越前」</h4>
+                  <p class="event-text">越前海岸を目の前に臨む道の駅「越前」に越前がにミュージアムはございます。<br>
+                    当ミュージアムで越前がにについて学ぶだけではなく、お土産品や食事、
+                    さらには温泉など1日を満喫できる場所となっております。</p>
+                  <div class="link-button-area">
+                    <a class="link-button" href="shop.html">くわしくはこちら</a>
+                  </div>
+                  <div class="character-animation">
+                    <img src="images/index/kurage.png" alt="キャラクターのくらげのくらげん">
+                  </div>
+                </div>
+                <div class="event-big-circle">
+                  <img src="images/index/index-event2.JPG" alt="">
+                </div>
+              </div>
+            </div>
+
+            <!-- 3枚目（スライダーあり） -->
+            <!-- 夏休み企画展の紹介 -->
+            <div class="event-card card3 right-layout">
+              <div class="event-top">
+                <div class="event-rect">
+                  <h4 class="event-title">夏休み企画展</h4>
+                  <p class="event-text">「海に潜む危険な生物展」2024年7月開催しました。<br>
+                    ※毎年夏休みにはいろいろな企画展を開催しています。</p>
+                  <div class="link-button-area">
+                    <a class="link-button" href="guide.html#guide_event">くわしくはこちら</a>
+                  </div>
+                  <div class="character-animation">
+                    <img src="images/index/same.png" alt="キャラクターのさめのしゃーくん">
+                  </div>
+                </div>
+                <div class="event-big-circle">
+                  <img src="images/index/index-event3.jpg" alt="">
+                </div>
+              </div>
+
+              <!-- ★ここに小さな円のサムネイルスライダーを入れる★ -->
+              <div class="event-subslider">
+                <div class="mask">
+                  <div class="circle-frame">
+                    <img class="circle-img set2" data-index="0">
+                  </div>
+                  <div class="circle-frame">
+                    <img class="circle-img set2" data-index="1">
+                  </div>
+                  <div class="circle-frame">
+                    <img class="circle-img set2" data-index="2">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4枚目（反転 / スライダーなし） -->
+            <!-- キャラクターの紹介 -->
+            <div class="event-card card4 left-layout">
+              <div class="event-top">
+                <div class="event-rect">
+                  <h4 class="event-title">
+                    <img src="images/index/crablovers.png" alt="">の紹介
+                  </h4>
+                  <p class="event-text-top">当ミュージアム公式キャラクター</p>
+                  <p class="event-text">日本海越前沖出身でカニの研究もカニを食べるのも大好き！！<br>
+                    当ミュージアムのビックラブで研究をしている優秀な博士たちです。</p>
+                  <div class="link-button-area">
+                    <a class="link-button" href="guide.html#guide_chara">くわしくはこちら</a>
+                  </div>
+                  <div class="character-animation">
+                    <img src="images/index/kani.png" alt="カニのイラスト">
+                  </div>
+                </div>
+                <div class="event-big-circle">
+                  <img src="images/index/index-event4.png" alt="クラブラバーズのキャラクターたち">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--------------------------------------
+  　　　　フッター　
+  -------------------------------------->
+  <footer>
+    <div class="gotop">
+      <!-- topへのタグ変更 -->
+      <a href="#top">
+        <p>
+          <span class="dli-chevron-up"></span><br>
+          <span class="delete">トップへ<br></span>
+        </p>
+        <img src="images/logo/logo sita.png" alt="">
+      </a>
+      <!-- topへのタグ変更 -->
+    </div>
+    <div class="footer-inner">
+      <!--↓↓フッター左側 -->
+      <div class="footer-left-contents">
+
+        <!-- ロゴ -->
+        <a href="index.html">
+          <img id="footer-logo" src="images/logo/museum logo black.png" alt="">
+
+        </a>
+
+        <!-- 店舗情報・連絡先 -->
+        <div class="info">
+          <div class="address">〒916-0422　<br>福井県丹生郡越前町厨71-324-1</div>
+          <div class="tel">問合せ先 はこちら<br>
+            <span id="tel-number">0778-37-2626</span>
+          </div>
+        </div>
+
+        <!-- 営業案内 -->
+        <div class="business-hours">
+          <p>開館時間 ：9:00～17:00(最終入館16:30まで)</p>
+          <p>休館日：毎週火曜日</p>
+          <p>※夏休み期間中は無休、11月～3月は第2・4火曜日休館</p>
+        </div>
+
+      </div>
+      <!-- ↑フッター左側 -->
+
+      <!-- フッターのナビゲーション -->
+      <div class="footer-site-menu">
+        <ul class="footer-menu-list">
+          <il class="list-title facility"><a href="guide.html">館内案内</a>
+            <ul>
+              <li><a href="guide.html#guide_nyuukanryou"> 入館料・開館時間・ 定休日</a></li>
+              <li><a href="guide.html#guide_access"> アクセス</a></li>
+              <li><a href="guide.html#guide_event"> イベント案内</a></li>
+              <li><a href="guide.html#guide_chara"> マスコット紹介</a></li>
+              <li><a href="guide.html#guide_map"> 館内マップ（3F～1F）</a></li>
+              <li><a href="guide.html#guide_uoichi"> お食事処うおいち</a></li>
+            </ul>
+          </il>
+          <il class="list-title about"><a href="about.html">越前がにとは</a>
+            <ul>
+              <li><a href="about.html#about-crab"> 越前がにとは</a></li>
+              <li><a href="about.html#about-ecology"> 越前がにの生態</a></li>
+              <li><a href="about.html#about-history"> 越前がにの歴史</a></li>
+            </ul>
+          </il>
+          <il class="list-title echizen-coast"><a href="echizen-coast.html">越前海岸</a>
+            <ul>
+              <li><a href="echizen-coast.html#echizen-coast-intro"> 越前海岸の特徴</a></li>
+              <li><a href="echizen-coast.html#echizen-coast-fish-intro"> 越前海岸の魚たち</a></li>
+
+            </ul>
+          </il>
+
+          <il class="list-title shop"><a href="shop.html">道の駅「越前」</a>
+            <ul>
+              <li><a href="shop.html#mitinoeki-map"> 道の駅マップ</a></li>
+              <li><a href="shop.html#nigiwaihiroba"> にぎわい広場</a></li>
+              <li><a href="shop.html#antennashop"> アンテナショップ</a></li>
+              <li><a href="shop.html#roten"> 露天風呂「漁火」</a></li>
+              <li><a href="shop.html#uoichi"> うおいち</a></li>
+              <li><a href="shop.html#info"> 越前観光案内所</a></li>
+            </ul>
+          </il>
+          <li class="wrapper">
+            <ul class="wrapper-contents">
+              <il class="list-title access"><a href="access.html">アクセス</a>
+                <ul>
+                  <li><a href="access.html#access_1"> 定休日・営業時間
+                      ・料金</a></li>
+                  <li><a href="access.html#access_2"> アクセスマップ</a></li>
+                  <li><a href="access.html#access_3"> 交通案内</a></li>
+                  <li><a href="access.html#access_4"> 周辺施設案内</a></li>
+                  <li><a href="access.html#access_5"> よくある質問</a></li>
+                </ul>
+              </il>
+              <li class="list-title home">
+                <a href="index.html">HOME</a>
+                <ul>
+                  <li><a href="index.html#news-columns">新着情報</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <!-- snsのロゴ -->
+        <p class="sns">
+          <a href="https://www.instagram.com/echizen_colors/" target="_blank" rel="noopener noreferrer">
+            <img src="images/common/icon-insta.png" alt="echizen_colors">
+          </a>
+          <a href="https://www.youtube.com/channel/UCQ6AB8hiRizn0QOQ-Cj7unA" target="_blank" rel="noopener noreferrer">
+            <img src="images/common/icon-youtube.png" alt="Tourism Echizen JAPAN Channel">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <!-- コピーライト -->
+      <p><small>&copy;2025 ECHIZEN GANI MUSEUM All Rights Reserved.</small></p>
+    </div>
+  </footer>
+  <!-- フッターここまで -->
+
+
+
+  <!--------------------------------------
+  jQueryここから
+  --------------------------------------->
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous">
+    </script>
+
+  <!----------------------------------------
+  ローディングアニメーション
+  ------------------------------------->
+  <script>
+    // ページの読み込み完了時にローディング画面をフェードアウト
+    $(window).on("load", function () {
+      $("#loading").delay(800).fadeOut(600); // 画像をフェードアウト
+    });
+    // 5秒経ったら強制的にローディング画面をフェードアウト
+    setTimeout(function () {
+      $("#loading").fadeOut(600);
+    }, 5000);
+  </script>
+
+  <!----------------------------------------------
+  ハンバーガーメニューを開いたときのメニュー画面
+  アコーディオンメニューここから
+  ------------------------------------------------>
+  <script>
+    $(function () {
+      function accordionSetup() {
+        if ($(window).width() <= 800) {
+          // ホバー無効化
+          $('.menu-main > li').off('mouseenter mouseleave');
+
+          // クリックでアコーディオン
+          $('.nav-accordion').off('click').on('click', function (e) {
+            e.preventDefault();
+            // 同じ li 内の submenu だけ開閉
+            var submenu = $(this).closest('li').children('.submenu');
+            submenu.stop(true, true).slideToggle(); // stopでアニメーションの重なり防止
+          });
+
+          // サブメニューリンクをクリックしたらアコーディオンを閉じる
+          $('.submenu a').off('click').on('click', function () {
+            $(this).closest('.submenu').slideUp();
+          });
+
+        } else {
+          // ホバー有効化
+          $('.nav-accordion').off('click');
+          $('.submenu').removeAttr('style');
+        }
+      }
+
+      // 初回実行
+      accordionSetup();
+
+      // リサイズ時
+      $(window).resize(function () {
+        accordionSetup();
+      });
+    });
+  </script>
+
+  <!---------------------------------------------------
+    ファーストビューのアニメーション
+    -------------------------------------------- -->
+
+  <script>
+    $(document).ready(function () {
+      let slides = $(".slide");
+      let current = 0;
+
+      // 全スライドを非表示にする
+      slides.hide();
+
+      // 最初のスライドを表示
+      slides.eq(current).fadeIn(1000);
+
+      // 通常のスライド切り替え
+      setInterval(function () {
+        slides.eq(current).fadeOut(1000);
+        current = (current + 1) % slides.length;
+        slides.eq(current).fadeIn(1000);
+      }, 3000); // ← 3秒ごとに切り替え（フェードと相性が良い）
+    });
+  </script>
+
+
+  <!-------------------------------------
+  3つの小さな円のサムネイルスライダー
+  --------------------------------------->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+      // カード1枚目の画像セット
+      const images1 = [
+        "images/index/index-area1-1.jpg",
+        "images/index/index-area1-2.jpg",
+        "images/index/kurage.png",
+        "images/index/index-area1-3.jpg",
+        "images/index/index-area1-4.jpg",
+        "images/index/same.png",
+        "images/index/index-area1-5.jpg",
+        "images/index/index-area1-6.jpg",
+        "images/index/kanimaru.png",
+        "images/index/index-area1-7.jpg"
+      ];
+      // カード3枚目の画像セット（別の画像）
+      const images2 = [
+        "images/index/index-area2-1.jpg",
+        "images/index/index-area2-2.jpg",
+        "images/index/kani.png",
+        "images/index/index-area2-3.jpg",
+        "images/index/index-event3.jpg"
+      ];
+
+
+
+      // 共通の切り替え関数
+      function startSlider(selector, images) {
+        const imgs = document.querySelectorAll(selector);
+
+        imgs.forEach((img) => {
+          let index = parseInt(img.dataset.index);
+
+          img.src = images[index];
+
+          setInterval(() => {
+            index = (index + 1) % images.length;
+            img.src = images[index];
+          }, 4000);
+        });
+      }
+
+      // カード1枚目
+      startSlider(".circle-img.set1", images1);
+
+      // カード3枚目
+      startSlider(".circle-img.set2", images2);
+    });
+  </script>
+</body>
+
+</html>
