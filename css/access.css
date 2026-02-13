@@ -1,0 +1,813 @@
+@charset "UTF-8";
+
+/* ========================================
+   アクセスページ - プレーンCSS
+   ========================================== */
+
+/* ========================================
+   全体設定
+   ========================================== */
+.access_page {
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+
+/* ========================================
+   トップヒーローイメージ（箱のみ）
+   ========================================== */
+.access_hero {
+  width: 100%;
+  height: 490px;
+  /* 背景画像はHTMLで直接指定するか、後からCSSで上書きしてください */
+  background-image: url(../images/access/access_main.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 40px;
+  margin-top: -80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* トップヒーロー内の「アクセス」テキスト */
+.access_hero h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* ========================================
+   セクション（section要素）
+   ========================================== */
+section {
+  margin: 80px auto;
+  max-width: 1000px;
+  /* コンテンツ幅を1000pxに統一 */
+  padding: 0 20px;
+}
+
+/* ========================================
+   コンテンツボックス（白背景のボックス）
+   ========================================== */
+.access_box {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 1000px;
+  /* 内部も1000pxに統一 */
+  margin: 0 auto;
+}
+
+/* ========================================
+   h2見出し（各セクションのタイトル）
+   CSS ::before でアイコンを付与
+   ========================================== */
+.access_box h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #000;
+  margin: 0 0 30px 0;
+  padding-left: 60px;
+  /* アイコン分のスペース */
+  position: relative;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+/* ::before でアイコン画像を表示 */
+.access_box h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 営業時間アイコン（最初のh2） */
+.access_hours_fees .access_box h2:first-of-type::before {
+  background-image: url("../images/access/icon1.png");
+}
+
+/* 料金アイコン */
+.access_hours_fees .access_box h2.access_h2_fee::before {
+  background-image: url("../images/access/icon2.png");
+}
+
+/* アクセスマップアイコン */
+.access_hours_fees .access_box h2.access_h2_map::before {
+  background-image: url("../images/access/icon3.png");
+}
+
+/* 交通案内アイコン */
+.access_box h2.access_h2_transport::before {
+  background-image: url("../images/access/icon4.png");
+}
+
+/* 周辺施設案内アイコン */
+.access_box h2.access_h2_facilities::before {
+  background-image: url("../images/access/icon5.png");
+}
+
+/* よくある質問アイコン */
+.access_box h2.access_h2_faq::before {
+  background-image: url("../images/access/icon6.png");
+}
+
+/* ========================================
+   営業時間・料金セクション
+   ========================================== */
+/* 背景色を黄色に */
+.access_hours_fees .access_box {
+  background: #fffaaa;
+}
+
+/* 2カラムレイアウト */
+.access_content {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.access_content>div {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* 営業時間テキスト */
+.access_hours {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+  margin: 10px 0;
+}
+
+/* 注意書きテキスト */
+.access_note {
+  font-size: 16px;
+  color: #000;
+  margin: 10px 0;
+}
+
+/* 休館日エリア */
+.access_closed {
+  margin: 20px 0 10px 0;
+}
+
+.access_closed h3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.access_closed div {
+  font-size: 16px;
+  color: #000;
+  line-height: 1.5;
+}
+
+.access_closed p {
+  margin: 0;
+}
+
+
+
+/* 料金表 */
+.access_table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #000;
+  margin: 120px 0 0 0;
+}
+
+.access_table th,
+.access_table td {
+  border: 1px solid #000;
+  padding: 15px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* 料金表の小さい文字 */
+.access_small {
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* かに画像 */
+.access_crab {
+  width: 100%;
+  max-width: 510px;
+  height: 250px;
+  background-image: url("../images/access/access1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* 料金h2（交通案内の前にマージン追加） */
+.access_h2_fee {
+  margin-top: 30px;
+}
+
+/* 料金に関する注意事項 */
+.access_fee_notes {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+}
+
+.access_fee_notes p {
+  margin: 0;
+  text-indent: -1em;
+  padding-left: 1em;
+}
+/* .access_fee_notes p:nth-child(1){
+  font-weight: bold;
+}
+.access_fee_notes p:nth-child(2){
+  font-weight: bold;
+} */
+
+/* ========================================
+   アクセスマップ
+   ========================================== */
+/* 住所・電話番号エリア */
+.access_h2_map {
+  text-align: center;
+}
+
+.access_address {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 20px;
+  /* font-weight: bold; */
+}
+
+.access_tel {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* Googleマップ埋め込みエリア */
+.access_map {
+  width: 100%;
+  height: 450px;
+  margin: 30px auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.access_map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* 地図下の注意書き */
+.access_map_note {
+  font-size: 20px;
+  text-align: center;
+  color: #000;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  font-weight: bold;
+  border-bottom: 5px dotted #85BAE4;
+  padding-bottom: 20px;
+}
+
+.access_map_note p {
+  margin: 5px 0;
+}
+
+/* ========================================
+   交通案内
+   ========================================== */
+/* 交通案内h2（上部マージン追加） */
+.access_h2_transport {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.access_transport p {
+    color: #f31d20;
+    font-weight: bold;
+    text-indent: -1em;
+  padding-left: 1em;
+  line-height: 1.5;
+
+  }
+/* 交通案内の2カラムレイアウト */
+.access_transport {
+  display: flex;
+  gap: 40px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.access_transport>div {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* 道路地図画像 */
+.access_road_map {
+  width: 100%;
+  height: 400px;
+  background-image: url("../images/access/access2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+/* 交通案内の見出し */
+.access_transport h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+/* リンクボタンエリア */
+.access_links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.access_links a {
+  display: inline-block;
+  background: #d4e9ff;
+  color: #3583aa;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.access_links a:hover {
+  background: #C0DEFF;
+  text-decoration: underline;
+  color:#1378AA ;
+}
+
+/* .access_links a:visited{
+  color:#660099 ;
+} */
+
+/* 道路案内図 */
+.access_road_guide {
+  width: 100%;
+  height: 600px;
+  max-width: 821px;
+  margin: 40px auto 0 0;
+  background-image: url("../images/access/access3.png");
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+/* ========================================
+   周辺施設案内
+   ========================================== */
+
+
+/*背景画像*/
+.access_water {
+  background-image: url(../images/background-wave.png);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+
+/* イントロダクション文 */
+.access_intro {
+  font-size: 20px;
+  color: #000;
+  text-align: center;
+  margin: 30px 0 50px 0;
+  line-height: 1.5;
+}
+
+/* 施設一覧全体 */
+.access_facilities {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* 各施設アイテム（画像＋テキストの横並び） */
+.access_facility {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* 施設画像 */
+.access_facility_img {
+  flex: 1;
+  min-width: 300px;
+  height: 280px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+/* 各施設の画像背景 */
+.access_img_echizen {
+  background-image: url("../images/access/access5.jpg");
+}
+
+.access_img_plantopia {
+  background-image: url("../images/access/access6.JPG");
+}
+
+.access_img_suisen {
+  background-image: url("../images/access/access7.jpg");
+}
+
+.access_img_pottery {
+  background-image: url("../images/access/access8.jpg");
+}
+
+/* 施設コンテンツ（テキスト部分） */
+.access_facility>div:last-child {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* 施設名 */
+.access_facility h3 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1E52C7;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* 施設説明文 */
+.access_facility p {
+  font-size: 16px;
+  color: #000;
+  line-height: 1.5;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+
+.access_kuwasiku {
+  text-align: center;
+}
+
+/* くわしくはこちらボタン */
+.access_facility button {
+  background: #2a59b5;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.access_facility button:hover {
+  background: #1e4089;
+}
+
+/* 左右反転（プラントピアと陶芸館） */
+.access_reverse {
+  flex-direction: row-reverse;
+}
+
+
+
+
+/* ========================================
+   よくある質問（FAQ）
+   ========================================== */
+
+/*背景画像*/
+.access_water2 {
+  background-image: url(../images/background.png);
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+/* FAQ全体 */
+.access_faq {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* 各FAQアイテム */
+.access_faq_item {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/* FAQ質問部分（クリック可能） */
+.access_faq_q {
+  background: #d4e9ff;
+  padding: 20px 30px;
+  font-size: 24px;
+  color: #000;
+  cursor: pointer;
+  /* ホバー時にカーソルが変わる */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+/* ホバー時の背景色変更 */
+.access_faq_q:hover {
+  background: #c0deff;
+}
+
+/* FAQ開閉アイコン */
+.access_faq_icon {
+  font-size: 24px;
+  font-weight: normal;
+  flex-shrink: 0;
+  margin-left: 10px;
+}
+
+/* FAQ回答部分（初期状態は非表示） */
+.access_faq_a {
+  background: #eaf4ff;
+  padding: 25px 40px;
+  font-size: 20px;
+  color: #000;
+  line-height: 1.5;
+  display: none;
+  text-align: 1em;
+  padding-left: 1em;
+  /* 初期状態は非表示 */
+}
+
+/* 開いた状態（アコーディオン） */
+.access_open {
+  display: block;
+}
+
+.access_faq_a p {
+  margin: 10px 0;
+}
+
+/* フッター用マージン */
+.access_faq_section {
+  margin-top: 0;
+  margin-bottom: 80px;
+}
+
+/* ========================================
+   レスポンシブ: 800px以下（タブレット）
+   ========================================== */
+@media screen and (max-width: 800px) {
+
+  /* トップヒーロー */
+  .access_hero {
+    height: 250px;
+    margin-bottom: 20px;
+  }
+
+  .access_hero h1 {
+    font-size: 40px;
+  }
+
+  /* セクション */
+  section {
+    margin: 60px auto;
+    padding: 0 15px;
+  }
+
+  /* コンテンツボックス */
+  .access_box {
+    padding: 25px 20px;
+    border-radius: 15px;
+  }
+
+  /* h2見出し */
+  .access_box h2 {
+    font-size: 24px;
+    padding-left: 50px;
+    min-height: 30px;
+  }
+
+  .access_box h2::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* 営業時間・料金 */
+  .access_content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .access_content>div {
+    min-width: 100%;
+  }
+
+  .access_hours {
+    font-size: 20px;
+  }
+
+  .access_note {
+    font-size: 14px;
+  }
+
+  .access_closed h3 {
+    font-size: 20px;
+  }
+
+  .access_closed div {
+    font-size: 14px;
+  }
+
+  /*料金テーブル*/
+  .access_table {
+    margin-top: 40px;
+
+  }
+
+  .access_table th,
+  .access_table td {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .access_small {
+    font-size: 11px;
+  }
+
+  /*カニの画像*/
+  .access_crab {
+    /* max-width: 100%;
+    height: 250px; */
+    display: none;
+
+  }
+
+  .access_fee_notes {
+    font-size: 14px;
+  }
+
+
+  /* アクセスマップ */
+  .access_address {
+    font-size: 14px;
+  }
+
+  .access_tel {
+    font-size: 16px;
+  }
+
+  .access_map {
+    height: 300px;
+  }
+
+  .access_map_note {
+    font-size: 16px;
+  }
+
+  /* 交通案内 */
+  .access_h2_transport {
+    margin-top: 40px;
+  }
+
+  .access_transport {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .access_transport p {
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  /* .access_transport>div {
+    min-width: 100%;
+  } */
+
+  .access_road_map {
+    flex: none !important;
+    /* 2. PC版の min-width: 300px を打ち消す */
+    min-width: 0 !important;
+    /* 3. 縦並び用のサイズ指定 */
+    width: 100%;
+    /* 横幅いっぱいに */
+  }
+
+  .access_transport h3 {
+    font-size: 18px;
+  }
+
+  .access_links a {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+
+  .access_road_guide {
+    height: 400px;
+  }
+
+  /* 周辺施設 */
+  .access_intro {
+    font-size: 14px;
+    margin: 20px 0 30px 0;
+  }
+
+  .access_facilities {
+    gap: 40px;
+  }
+
+  .access_facility,
+  .access_reverse {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .access_facility_img,
+  .access_facility>div:last-child {
+    min-width: 100%;
+  }
+
+  .access_facility_img {
+    height: 220px;
+    flex: none;
+    /* flexを無効化して高さを確保 */
+    width: 100%;
+    /* 幅を100%に */
+
+  }
+
+  .access_water {
+    background-size: cover;
+    padding-bottom: 20px;
+  }
+
+  .access_facility h3 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .access_facility p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .access_facility button {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 18px;
+  }
+
+  /* FAQ */
+  .access_faq_q {
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+
+  .access_faq_icon {
+    font-size: 20px;
+  }
+
+  .access_faq_a {
+    padding: 20px;
+    font-size: 14px;
+  }
+
+  .access_faq_section {
+    margin-bottom: 60px;
+  }
+}

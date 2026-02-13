@@ -1,0 +1,1222 @@
+/* ファーストビュー */
+
+
+
+
+
+#guide_mainimage {
+    height: 490px;
+    background-image: url(../images/guide/guide_01.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+
+
+body {
+    padding-top: 0;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+h2 {
+    font-size: 40px;
+}
+
+h2::before {
+    content: "";
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background-image: url("../images/logo/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    transform: translateY(11px);
+}
+
+/* 本文 */
+#guide_honbun {
+    width: 930px;
+    max-width: 90%;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 入館料 */
+table {
+    text-align: center;
+    background-color: #fff;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+
+table th,
+table td {
+    padding: 15px;
+    border: 1px solid #000;
+}
+
+
+tr:first-child {
+    background-color: #FFA2A2;
+}
+
+
+#guide_nyuukanryou {
+    margin: 20px 0 100px 0;
+    padding: 5px 0;
+    background: #fffaaa;
+    border-radius: 20px;
+    margin-top: 0;
+}
+
+
+#guide_nyuukanryou h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+#guide_nyuukanryou p {
+    text-align: left;
+    background-color: #fff;
+    margin: 20px 15px;
+    padding: 20px 15px;
+    border-radius: 20px;
+}
+
+/* 開館時間・定休日 */
+#guide_jikan {
+    margin: 20px 0 100px 0;
+    padding: 5px 0;
+    background: #fffaaa;
+    border-radius: 20px;
+}
+
+
+#guide_jikan h2 {
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+#guide_jikan p {
+    text-align: left;
+    background-color: #fff;
+    margin: 10px 15px 20px 15px;
+    padding: 20px 15px;
+    border-radius: 20px;
+}
+
+/* アクセス */
+#guide_access {
+    margin: 20px 0 100px 0;
+    padding: 5px 0;
+    background: #fffaaa;
+    border-radius: 20px;
+}
+
+
+#guide_access h2 {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+#guide_access p {
+    text-align: left;
+    background-color: #fff;
+    margin: 20px 15px;
+    padding: 20px 15px;
+    border-radius: 20px;
+}
+
+
+#guide_if {
+    text-align: center;
+}
+
+
+.iframe-wrap {
+    position: relative;
+    width: 600px;
+    height: 450px;
+    margin: 0 auto;
+    padding-top: 75%;
+}
+
+
+.iframe-wrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* イベント */
+#guide_event {
+    margin: 20px 0 100px 0;
+    padding: 5px 0 90px 0;
+    background: #fffaaa;
+    border-radius: 20px;
+}
+
+
+#guide_event h2 {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+#guide_event h3 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+#guide_hosoku {
+    background-color: #fff;
+    margin: 20px 15px;
+    padding: 15px 15px 20px 15px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+
+.guide_e_img {
+    position: relative;
+    height: 500px;
+}
+
+
+.guide_e_img img {
+    position: absolute;
+    width: 45%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+}
+
+
+.guide_e1 {
+    top: 0;
+    left: 5%;
+    transform: rotate(-4deg)scale(0.85);
+    z-index: 4;
+}
+
+
+.guide_e2 {
+    top: 20px;
+    right: 5%;
+    transform: rotate(6deg);
+    z-index: 2;
+}
+
+
+.guide_e3 {
+    top: 220px;
+    left: 0;
+    transform: rotate(8deg);
+    z-index: 3;
+}
+
+
+.guide_e4 {
+    top: 260px;
+    right: 10%;
+    transform: rotate(-5deg);
+    z-index: 4;
+}
+
+
+.guide_e_img img {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.80);
+}
+
+/* マスコット */
+#guide_chara {
+    margin: 20px 0 150px 0;
+    padding: 5px 0;
+    position: relative;
+    background: #fffaaa;
+    border-radius: 20px;
+    padding-bottom: 50px;
+}
+
+
+#guide_chara h2 {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+#guide_rogo {
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+
+
+#guide_setumei p {
+    text-align: left;
+    background-color: #fff;
+    margin: 10px 15px 20px 15px;
+    padding: 20px 15px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+#guide_3chara {
+    position: relative;
+    width: 100%;
+    height: 580px;
+}
+
+
+#guide_3chara p {
+    margin-top: 100px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+#guide_3chara div {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+
+#guide_3chara h3 {
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    font-size: 30px;
+}
+
+
+#guide_3chara img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+#guide_3chara img {
+    margin-top: 40px;
+}
+
+
+#guide_kurage {
+    left: 0;
+    z-index: 1;
+}
+
+
+#guide_kani {
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+
+#guide_same {
+    right: 0;
+    z-index: 2;
+}
+
+
+#guide_same img {
+    transform: translateX(70px);
+}
+
+/* マップ */
+#guide_3img,
+#guide_2img,
+#guide_1img {
+    border-radius: 20px;
+}
+
+
+#guide_map h2 {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+#guide_map p {
+    background-color: #fff;
+    padding: 20px 15px;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+/* 三階 */
+#guide_sankai {
+    position: relative;
+}
+
+
+#guide_3_img {
+    position: absolute;
+    width: 20%;
+    height: auto;
+    right: -30px;
+    bottom: 20px;
+    transform: rotate(30deg);
+    z-index: 3;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+}
+
+/* 二階 */
+#guide_nikai {
+    position: relative;
+}
+
+
+#guide_2_img_1,
+#guide_2_img_2,
+#guide_2_img_3 {
+    position: absolute;
+    height: auto;
+    top: auto;
+    bottom: 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+}
+
+
+#guide_2_img_3 {
+    right: 15px;
+    transform: translateX(150px) rotate(-20deg);
+    z-index: 3;
+    width: 27%;
+}
+
+
+#guide_2_img_2 {
+    right: calc(15px + 20px);
+    transform: translateY(-120px) translateX(100px) rotate(-10deg);
+    z-index: 2;
+    width: 32%;
+}
+
+
+#guide_2_img_1 {
+    right: calc(15px + 40px);
+    transform: translateY(30px) translateX(-40px) rotate(10deg);
+    z-index: 1;
+    width: 22%;
+}
+
+/* 一階 */
+#guide_1_img_1,
+#guide_1_img_2,
+#guide_1_img_3 {
+    position: absolute;
+    transform-origin: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+#guide_1_img_3 {
+    width: 27%;
+    transform:
+        translate(50%, 50%) translateX(260px) rotate(-20deg);
+    z-index: 3;
+    border-radius: 6px;
+}
+
+
+#guide_1_img_2 {
+    width: 32%;
+    transform:
+        translate(50%, 50%) translate(100px, -120px) rotate(-10deg);
+    z-index: 2;
+    border-radius: 6px;
+}
+
+
+#guide_1_img_1 {
+    width: 22%;
+    transform:
+        translate(50%, 10%) translateY(30px) rotate(10deg);
+    z-index: 1;
+    border-radius: 6px;
+}
+
+
+#guide_ikkai {
+    position: relative;
+}
+
+
+#guide_1kai_p1 {
+    position: relative;
+    padding-bottom: 120px;
+}
+
+
+#guide_ikkai {
+    position: relative;
+    padding-bottom: 100px;
+}
+
+
+#guide_1kai_p1 {
+    margin-bottom: 100px;
+}
+
+
+.guide_1_images-wrap {
+    position: relative;
+    height: 700px;
+}
+
+
+.guide_1_images {
+    position: absolute;
+    inset: 0;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+
+.guide_1_images {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%) translateY(20%);
+}
+
+
+.guide_1_images img {
+    position: absolute;
+    left: 50%;
+    transform-origin: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+
+#guide_1_img_3 {
+    width: 114%;
+    transform: translateX(10px) translateY(160px) rotate(-15deg);
+    z-index: 3;
+    border-radius: 6px;
+}
+
+
+#guide_1_img_2 {
+    width: 160%;
+    transform: translateX(-50%) translate(-20px, -100px) rotate(-5deg);
+    z-index: 2;
+    border-radius: 6px;
+}
+
+
+#guide_1_img_1 {
+    width: 110%;
+    transform: translateX(-50%) translateX(-250px) translateY(250px) rotate(10deg);
+    z-index: 3;
+    border-radius: 6px;
+}
+
+
+.guide_1_images-wrap--five {
+    height: 900px;
+}
+
+
+#guide_1_img_4 {
+    width: 120%;
+    transform: translateX(-50%) translateX(-250px) translateY(-100px) rotate(8deg);
+    z-index: 1;
+    border-radius: 6px;
+}
+
+
+#guide_1_img_5 {
+    width: 100%;
+    transform: translateX(-50%) translateX(-260px) translateY(300px) rotate(-5deg);
+    z-index: 3;
+    border-radius: 6px;
+}
+
+
+#guide_1_img_6 {
+    width: 70%;
+    transform: translateX(-50%) translateY(-100px) rotate(10deg);
+    z-index: 2;
+    border-radius: 6px;
+}
+
+
+#guide_1_img_7 {
+    width: 100%;
+    transform: translateX(-50%) translateX(160px) translateY(300px) rotate(6deg);
+    z-index: 3;
+    border-radius: 6px;
+}
+
+
+#guide_1_img_8 {
+    width: 100%;
+    transform: translateX(-50%) translateX(320px) rotate(-8deg);
+    z-index: 3;
+    border-radius: 6px;
+}
+
+/* 背景 */
+.guide-wave-bg {
+    background-image: url(../images/guide/nami_long.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
+
+
+.guide-inner {
+    width: 930px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+
+.guide-wave-bg {
+    padding-top: 50px;
+    background-image: url(../images/guide/nami_long.png);
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    background-position: center 10px;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
+
+/* うおいち */
+#guide_uoichi h2 {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+#guide_uoichi p {
+    background-color: #fff;
+    padding: 20px 15px;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+
+.guide_uoichi_images-wrap {
+    position: relative;
+    height: 450px;
+    margin-top: 40px;
+}
+
+
+.guide_uoichi_images {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.guide_uoichi_images img {
+    position: absolute;
+    left: 50%;
+    transform-origin: center;
+    border-radius: 6px;
+}
+
+
+#guide_uoichi_img_1 {
+    width: 45%;
+    transform: translateX(-50%) translateX(-400px) rotate(-8deg);
+    z-index: 3;
+}
+
+
+#guide_uoichi_img_2 {
+    width: 50%;
+    transform: translateX(-50%) translateY(-40px);
+    z-index: 1;
+}
+
+
+#guide_uoichi_img_3 {
+    width: 45%;
+    transform: translateX(-50%) translateX(400px) rotate(6deg);
+    z-index: 2;
+}
+
+
+
+
+
+
+
+/* レスポンシブ */
+@media (max-width: 800px) {
+    img {
+        position: static !important;
+        transform: none !important;
+    }
+}
+
+
+@media (max-width: 800px) {
+    h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    h2::before {
+        margin-right: 8px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .guide_e_img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 20px;
+    }
+
+    .guide_e_img img {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 800px) {
+    #guide_3chara {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    #guide_3chara div {
+        position: static;
+        margin-bottom: 40px;
+    }
+
+    #guide_3chara h3 {
+        position: static;
+        margin: 10px 0;
+    }
+
+    #guide_3chara p {
+        margin-top: 10px;
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .guide_1_images-wrap,
+    .guide_1_images-wrap--five,
+    .guide_uoichi_images-wrap {
+        height: auto;
+    }
+
+    .guide_1_images,
+    .guide_uoichi_images {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .guide_1_images img,
+    .guide_uoichi_images img {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .guide_uoichi_images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 800px) {
+    #guide_kani {
+        left: auto;
+        transform: none;
+    }
+}
+
+
+@media (min-width: 801px) {
+    .iframe-wrap {
+        max-width: 600px;
+        padding-top: 75%;
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    #guide_3img,
+    #guide_2img,
+    #guide_1img {
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+
+@media (max-width: 800px) {
+    #guide_3_img {
+        width: 90%;
+        max-width: none;
+        height: auto;
+        margin: 0 auto 100px auto;
+        display: block;
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    #guide_2_img_1,
+    #guide_2_img_2,
+    #guide_2_img_3 {
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+        display: block;
+    }
+}
+
+
+@media (max-width: 800px) {
+    #guide_2_img_3 {
+        margin: 0 auto 100px auto;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .guide_1_images-wrap {
+        position: static;
+        height: auto;
+        margin: 40px 0;
+    }
+
+    .guide_1_images {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    #guide_1_img_1,
+    #guide_1_img_2,
+    #guide_1_img_3 {
+        position: static;
+        transform: none;
+        width: 90%;
+        max-width: 420px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .guide_1_images-wrap {
+        position: static !important;
+        height: auto !important;
+        margin: 40px 0 !important;
+    }
+
+    .guide_1_images {
+        position: static !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 24px !important;
+    }
+
+    #guide_1_img_1,
+    #guide_1_img_2,
+    #guide_1_img_3 {
+        position: static !important;
+        transform: none !important;
+        left: auto !important;
+        top: auto !important;
+        width: 90% !important;
+        max-width: 420px !important;
+        height: auto !important;
+        margin: 0 auto !important;
+        display: block !important;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .guide_1_images-wrap {
+        position: static !important;
+        height: auto !important;
+        margin: 40px 0 !important;
+    }
+
+    .guide_1_images {
+        position: static !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 30px !important;
+        transform: none !important;
+        inset: auto !important;
+        left: auto !important;
+        top: auto !important;
+    }
+
+    #guide_1_img_1,
+    #guide_1_img_2,
+    #guide_1_img_3 {
+        position: static !important;
+        width: 90% !important;
+        max-width: 420px !important;
+        height: auto !important;
+        transform: none !important;
+        left: auto !important;
+        top: auto !important;
+        margin: 0 auto !important;
+        display: block !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        border-radius: 6px !important;
+        z-index: auto !important;
+    }
+
+    #guide_1kai_p1 {
+        margin-bottom: 20px !important;
+    }
+
+    #guide_1kai_p2 {
+        margin-top: 40px !important;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .guide_1_images-wrap--five {
+        position: static !important;
+        height: auto !important;
+        margin: 40px 0 !important;
+    }
+
+    .guide_1_images--five {
+        position: static !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 30px !important;
+        transform: none !important;
+    }
+
+    #guide_1_img_4,
+    #guide_1_img_5,
+    #guide_1_img_6,
+    #guide_1_img_7,
+    #guide_1_img_8 {
+        position: static !important;
+        width: 90% !important;
+        max-width: 420px !important;
+        height: auto !important;
+        transform: none !important;
+        left: auto !important;
+        top: auto !important;
+        margin: 0 auto !important;
+        display: block !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        border-radius: 6px !important;
+        z-index: auto !important;
+    }
+
+    #guide_1kai_p3 {
+        margin-top: 40px !important;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .guide_uoichi_images-wrap {
+        position: static !important;
+        height: auto !important;
+        margin: 40px 0 !important;
+    }
+
+    .guide_uoichi_images {
+        position: static !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 30px !important;
+        transform: none !important;
+        width: 100% !important;
+    }
+
+    #guide_uoichi_img_1,
+    #guide_uoichi_img_2,
+    #guide_uoichi_img_3 {
+        position: static !important;
+        width: 90% !important;
+        max-width: 420px !important;
+        height: auto !important;
+        transform: none !important;
+        left: auto !important;
+        top: auto !important;
+        margin: 0 auto !important;
+        display: block !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        border-radius: 6px !important;
+        z-index: auto !important;
+    }
+
+    #guide_uoichi_p {
+        margin-bottom: 20px !important;
+    }
+
+    .guide-inner {
+        padding-bottom: 100px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .guide-wave-bg {
+        background-image: url(../images/guide/nami_long.png) !important;
+        background-position: center top !important;
+        background-size: cover !important;
+    }
+}
+
+
+@media (max-width: 800px) {
+    #guide_mainimage {
+        background-image: url(../images/guide/guide_28.png) !important;
+        background-position: center center !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+    }
+}
+
+
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .header-top {
+        height: 300px;
+    }
+
+    #guide_honbun {
+        margin-top: 200px;
+
+    }
+
+
+
+
+
+}
+
+
+
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+.header-top {
+    top: -40px;
+    z-index: 9999;
+}
+
+
+@media (max-width: 800px) {
+
+    .header {
+        /* position: static; */
+                position: absolute;  
+        height: 60px;
+        background: rgba(0, 0, 0, 0.25);
+        display: flex;
+        align-items: center;
+    }
+
+    .header-inner {
+        width: 100vw;
+        z-index: 100;
+        background: none;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        padding-top: 0px;
+    }
+
+    .header-inner a {
+        display: inline-block;
+        position: static;
+        transform: translateY(0%);
+
+    }
+
+
+
+
+
+
+
+
+    .header-top {
+        top: 0px;
+
+    }
+
+}
+
+
+@media (max-width: 800px) {
+  #guide_mainimage {
+    margin-top: -30px;
+  }
+}
+
+@media (max-width: 800px) {
+  #guide_mainimage {
+    margin-top: -30px;
+    margin-bottom: 40px; 
+  }
+}
+
+
+@media (max-width: 800px) {
+  #guide h2 {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  #guide_honbun {
+    margin-top: 0px; 
+  }
+}
+
+
+
+
+
+@media (max-width: 800px) {
+  #guide_mainimage {
+    height: 100%;
+    background-image: url(../images/guide/guide_28.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media (max-width: 800px) {
+  #guide_mainimage {
+    margin-top: 0;   /* ← これ */
+  }
+}
+
+@media (max-width: 800px) {
+  .header-top {
+    overflow: hidden; /* ← 超重要 */
+            position: relative; 
+  }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+    .menu-btn {
+        top: 15px;
+    }
+
+}
+
+
+
+
+
+
+

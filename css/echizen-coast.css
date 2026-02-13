@@ -1,0 +1,597 @@
+@charset "utf-8";
+@import url(../css/common.css);
+
+.header-top {
+    background-image: url(../images/echizen-coast/echizen-main.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 490px;
+    /* 高さは背景画像に合わせて */
+    position: relative;
+    /* h1を絶対配置するための基準に */
+}
+
+.header-top h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+
+
+
+
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+
+
+
+/* ここから越前海岸の特徴 */
+
+.echizen-coast-section {
+    margin-bottom: 80px;
+}
+
+.echizen-coast-intro {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fffaaa;
+    border-radius: 20px;
+    padding: 30px 20px;
+}
+
+.echizen-coast-intro-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0;
+    position: relative;
+}
+
+.echizen-coast-intro-text {
+    max-width: 450px;
+    line-height: 2rem;
+    /* margin: 30px auto 30px; */
+    font-size: 20px;
+}
+
+h2::before {
+    content: "";
+    background-image: url(../images/logo/logo.png);
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 60px;
+    margin-right: 10px;
+    vertical-align: text-bottom;
+}
+
+.echizen-coast-intro img {
+    width: 400px;
+    border-radius: 20px;
+}
+
+.echizen-coast-intro img:last-child {
+    width: 220px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+/* ここから越前海岸の魚たちの紹介 */
+
+/****** 背景の設定 *******/
+.echizen-coast-container {
+    background-image: url(../images/background.png);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.echizen-coast-container::before {
+    content: "";
+    background-image: url(../images/wave.png);
+    display: block;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    background-position: top center;
+    background-repeat: no-repeat;
+    left: 0;
+    top: -60px;
+}
+
+/************************/
+
+
+.echizen-coast-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 30px 0 30px;
+    margin-bottom: 50px;
+}
+
+.echizen-coast-fish-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.echizen-coast-fish-intro img {
+    width: 180px;
+}
+
+.echizen-coast-fish-intro p {
+    width: 600px;
+    line-height: 2rem;
+    padding: 30px 30px 30px 50px;
+    font-size: 24px;
+}
+
+/* キャラクターアニメーションここから */
+.character-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.character-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    /* デフォルトは表示 */
+}
+
+/* 1枚目：左→右へ動きながら点滅 */
+.character-image-a {
+    animation: moveA 1.5s infinite;
+}
+
+/* 2枚目：1枚目と逆のタイミングで点滅＋同じ動き */
+.character-image-b {
+    animation: moveB 1.5s infinite;
+}
+
+/* A の動き（表示→非表示） */
+@keyframes moveA {
+
+    0%,
+    50% {
+        opacity: 1;
+        /* transform: translateX(0) translateY(0); */
+    }
+
+    50.01%,
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* B の動き（A と逆のタイミング） */
+@keyframes moveB {
+
+    0%,
+    50% {
+        opacity: 0;
+    }
+
+    50.01%,
+    100% {
+        opacity: 1;
+    }
+}
+/* キャラクターアニメーションここまで */
+
+
+/******** ふき出し *********/
+.speechBubble {
+    position: relative;
+    display: inline-block;
+    margin-right: 18px;
+    padding: 16px;
+    border: 5px solid #b4e5f9;
+    border-radius: 30px;
+    background-color: #ffffff;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+}
+
+.speechBubble::before {
+    content: "";
+    position: absolute;
+    top: 51%;
+    right: 0;
+    border-style: solid;
+    border-width: 0 0 13px 18px;
+    border-color: transparent transparent transparent #b4e5f9;
+    translate: 100% -50%;
+    transform: skew(0, 12deg);
+    transform-origin: left;
+}
+
+.speechBubble::after {
+    content: "";
+    position: absolute;
+    top: 51%;
+    right: 0;
+    border-style: solid;
+    border-width: 0 0 8.5px 11.8px;
+    border-color: transparent transparent transparent #ffffff;
+    translate: 100% calc(-50% - 0.2px);
+    transform: skew(0, 12deg);
+    transform-origin: left;
+}
+
+
+
+/* ************************ */
+
+
+h3 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+h3::before,
+h3::after {
+    content: "";
+    background-image: url(../images/echizen-coast/asirai.png);
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 30px;
+    margin: 0 20px;
+    vertical-align: text-bottom;
+}
+
+.fish-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    text-align: center;
+    margin-bottom: 80px;
+    padding: 0 60px;
+}
+
+.fish-items:nth-of-type(4) {
+    margin-bottom: 30px;
+}
+
+.fish-items:nth-of-type(5) {
+    margin-bottom: 0px;
+}
+
+.fish-image {
+    width: 260px;
+    height: 240px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.fish-items:nth-of-type(3),
+.fish-items:nth-of-type(4),
+.fish-items:nth-of-type(5) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0 30px;
+}
+
+.fish-image-s{
+    width: 200px;
+    height: 180px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.fish-item dt {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.fish-item dd {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.fish-item {
+    background-color: #fffaaa;
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+/********** 虫めがねマーク　**********/
+.zoom{
+    position: relative;
+    display: inline-block;
+}
+
+.zoom img{
+    display: block;
+}
+
+.icon-zoom {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    width: 25px;
+    height: 25px;
+    pointer-events: none;
+}
+
+
+/********** ここからモーダルウィンドウ ***********/
+
+.modal-overlay {
+    z-index: 2;
+    display: none;
+    /*jsでフェードインされるまでdisplay:none*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /*100vhでビューポートの高さいっぱいになります*/
+    background-color: rgba(0, 0, 0, .5)
+}
+
+a.modal-open:hover {
+    cursor: pointer
+}
+
+/*カーソルをポインタに*/
+.modal-content {
+    position: fixed;
+    display: none;
+    /*jsでフェードインされるまでdisplay:none*/
+    z-index: 3;
+    /*オーバーレイより上に*/
+    margin: 10px;
+    padding: 15px;
+    border-radius: 20px;
+    background: #fff
+}
+
+.modal-content img {
+    max-width: 80vw;
+    max-height: 75vh
+}
+
+.modal-content h4 {
+    font-size: 120%;
+    margin-bottom: 0.5em
+}
+
+.modal-content p {
+    max-width: 565px;
+    text-align: left
+}
+
+a.modal-close {
+    /*クローズボタンは何でも好きなスタイルでOK*/
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: #b29c33;
+    font-size: 35px;
+    line-height: 1;
+    font-weight: bold;
+    text-decoration: none
+}
+
+a.modal-close:hover {
+    cursor: pointer
+}
+
+/*カーソルをポインタに*/
+
+h4 {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/********** ここからレスポンシブ ***********/
+
+@media (max-width: 800px) {
+
+    .header-top {
+        height: 250px;
+    }
+
+    .header-top h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    h2::before {
+        width: 50px;
+        height: 30px;
+    }
+
+    .main p {
+        font-size: 14px;
+        line-height: 1.5rem;
+        width: 100%;
+    }
+
+    .echizen-coast-intro {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 20px;
+    }
+
+    .echizen-coast-intro-img {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .echizen-coast-intro img:last-child {
+        position: static;
+        /*要素を通常の配置に戻す*/
+        margin-left: auto;
+    }
+
+    .echizen-coast-intro img {
+        width: 100%;
+    }
+
+
+
+
+
+
+
+    .echizen-coast-intro-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .echizen-coast-intro-text {
+        padding: 10px 10px;
+    }
+
+
+    .echizen-coast-inner {
+        padding: 20px 0;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 0;
+
+    }
+
+    .echizen-coast-fish-intro {
+        margin: 20px 10px 20px;
+    }
+
+    .echizen-coast-fish-intro p {
+        padding: 20px;
+    }
+
+    .echizen-coast-fish-intro img {
+      
+        margin-left: 10px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    h3::before,
+    h3::after {
+        width: 100px;
+        height: 10px;
+    }
+
+    .fish-items,
+    .fish-items:nth-of-type(3),
+    .fish-items:nth-of-type(4),
+    .fish-items:nth-of-type(5) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 40px;
+        padding: 0 10px;
+    }
+
+    .fish-items:nth-of-type(4) {
+        margin-bottom: 10px;
+    }
+
+    .fish-items:nth-of-type(5) {
+        margin-bottom: 0px;
+    }
+
+
+    .fish-image,
+    .fish-image-s {
+        width: 150px;
+        height: auto;
+        aspect-ratio: 1/1;
+        /*正方形にする*/
+        object-fit: cover;
+    }
+
+    .fish-item dt {
+        font-size: 14px;
+    }
+
+    .fish-item dd {
+        font-size: 12px;
+    }
+
+
+    /********** ここからモーダルウィンドウ ***********/
+    .modal-content img {
+        width: 80vw;
+    }
+
+.icon-zoom {
+    
+    right: 12px;
+    top: 12px;
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
+}

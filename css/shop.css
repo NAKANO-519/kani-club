@@ -1,0 +1,455 @@
+@charset "utf-8";
+@import url(../css/common.css);
+
+.header-top {
+  background-image: url(../images/shop/shop-main.JPG);
+  background-position: center;
+}
+
+.header-top h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+
+
+
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+
+/* ここからテキストと地図の部分 */
+
+.shop-section {
+    margin-bottom: 80px;
+}
+
+.shop-intro {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fffaaa;
+    border-radius: 20px;
+    padding: 30px 20px;
+}
+
+.shop-intro p {
+    width: 800px;
+    line-height: 2rem;
+    margin: 0 auto;
+    padding: 20px 20px;
+    font-size: 24px;
+}
+
+.shop-intro h2 {
+    margin-bottom: 0;
+}
+
+.shop-intro h2::before {
+    content: "";
+    background-image: url(../images/logo/logo.png);
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 60px;
+    margin-right: 10px;
+    vertical-align: text-bottom;
+}
+
+.shop-intro img {
+    max-width: 100%;
+}
+
+
+
+
+/* ここから各ショップの案内 */
+
+/********** 背景(なみなみ)の設定 *********/
+.shop-container {
+    background-image: url(../images/background.png);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.shop-container::before {
+    content: "";
+    background-image: url(../images/wave.png);
+    display: block;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    background-position: top center;
+    background-repeat: no-repeat;
+    left: 0;
+    top: -60px;
+}
+
+/*************************************/
+
+
+/********* 見出しの前のiconの設定 *******/
+.shop-title-nigiwai::before {
+    content: "";
+    background-image: url(../images/shop/icon-nigiwai.png);
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    margin-right: 10px;
+    vertical-align: text-bottom;
+}
+
+.shop-title-antennashop::before {
+    content: "";
+    background-image: url(../images/shop/icon-antennashop.png);
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    margin-right: 10px;
+    vertical-align: text-bottom;
+}
+
+.shop-title-roten::before {
+    content: "";
+    background-image: url(../images/shop/icon-roten.png);
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    margin-right: 10px;
+    vertical-align: text-bottom;
+}
+
+.shop-title-uoichi::before {
+    content: "";
+    background-image: url(../images/shop/icon-uoichi.png);
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    margin-right: 10px;
+    vertical-align: text-bottom;
+}
+
+.shop-title-info::before {
+    content: "";
+    background-image: url(../images/shop/icon-info.png);
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    margin-right: 10px;
+    vertical-align: text-bottom;
+}
+
+/****************************************/
+
+/********** 背景とボーダーの設定 ***********/
+.shop-list {
+    max-width: 1000px;
+    margin: 0 auto;
+    background:rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+/* .shop-list:nth-of-type(1){
+    border: 1rem solid #ffea9e;
+}
+
+.shop-list:nth-of-type(2),
+.shop-list:nth-of-type(3){
+    border: 1rem solid #c9e0ff;
+}
+.shop-list:nth-of-type(4){
+    border: 1rem solid #ffaf9f;
+}
+.shop-list:nth-of-type(5){
+    border: 1rem solid #cbf5c4;
+} */
+/****************************************/
+
+/* ボタン */
+.link-button-area {
+     /* 仮に中央ぞろえ、上に余白 */
+     text-align: center;
+     margin-top:30px;
+   }
+  .link-button {
+    background: #2a59b5;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+
+  .link-button:hover {
+    background: #1e4089;
+  }
+
+
+  /* ボタン */
+
+.shop-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+
+
+.shop-time {
+    width: 600px;
+    font-size: 24px;
+    line-height: 2.5rem;
+    margin: 20px auto;
+}
+
+.shop-time span{
+    display: inline-block;
+    width: 150px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+.shop-time p:nth-child(3){
+    font-size: 16px;
+    text-align: center;
+}
+
+
+.shop-list img {
+    width: 430px;
+    height: 260px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+
+.shop-text {
+    max-width: 430px;
+    line-height: 2rem;
+    padding: 20px 20px;
+    font-size: 18px;
+}
+
+.img-box {
+    text-align: center;
+}
+
+.img-box img {
+    width: 150px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+.shop-subtext p {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 2rem;
+}
+
+.shop-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    text-align: center;
+}
+
+.shop-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shop-item img {
+    max-width: 280px;
+    max-height: 280px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.shop-info-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    font-size: 16px;
+}
+
+.shop-info-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shop-info-item img {
+    margin-top: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+
+
+/********** ここからレスポンシブ ***********/
+
+@media (max-width:800px) {
+ .header-top {
+    height: 300px;
+ }
+.header-top h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.main p{
+    font-size: 14px;
+    line-height: 1.5rem;
+    width: 100%;
+}
+
+.main span{
+    font-size: 11px;
+}
+.shop-intro{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.shop-intro h2::before {
+    width: 50px;
+    height: 30px;
+}
+.shop-intro p {
+    width: 330px;
+    padding-top: 0px;
+}
+.shop-list{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+}
+
+
+
+.shop-title-nigiwai::before,
+.shop-title-antennashop::before,
+.shop-title-roten::before,
+.shop-title-uoichi::before,
+.shop-title-info::before{
+    width: 25px;
+    height: 25px;
+}
+
+.shop-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.shop-time {
+width: 330px;
+}
+.shop-time span{
+    width: 70px;
+    margin-right: 9px;
+}
+
+
+.shop-time p:nth-child(3){
+    font-size: 10px;
+    text-align: left;
+}
+
+.shop-text{
+    padding:10px 0;
+}
+
+.shop-list{
+    margin-bottom: 20px;
+}
+.shop-list img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.shop-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.shop-item img{
+    width: 100%;
+    aspect-ratio: 1/1;/*正方形にする*/
+    object-fit: cover;
+}
+
+.img-box img {
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.shop-subtext p {
+margin-bottom: 10px;
+}
+
+.shop-info-items {
+    gap: 5px;
+}
+.shop-info-items p{
+    font-size: 10px;
+}
+
+.shop-info-item img {
+    display: block;
+    margin-top: 10px;
+    width: 40px;
+    height: auto;
+    margin-bottom: 0;
+}
+}
